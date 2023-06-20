@@ -3,7 +3,7 @@ import React from 'react'
 
 const CustomFilter = ({title, containerStyles,btnType, handleClick}: CustomButtonProps) => {
   return (
-    <div>CustomFilter</div>
+    <div className='custom-filter'>CustomFilter</div>
   )
 }
 
