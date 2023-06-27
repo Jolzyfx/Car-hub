@@ -46,16 +46,24 @@ const Footer = () => {
            
            <p>@2023 CarHub. All Rights Reserved</p>
            
+           
            <div className="footer__copyrights-link">
+           <p className="pr-80 pl-70  justify-between items-center">Made By JolzyFx Codes😊💖</p>
              <Link href="/" className="text-gray-500">
                Privacy Policy
              </Link>
              <Link href="/" className="text-gray-500">
                Terms of Use
              </Link>
+
+
+            
+
+             
            </div>
+           
         </div>
-      
+        
     </footer>
   );
 };
