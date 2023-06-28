@@ -1,21 +1,7 @@
-// const url = 'https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla';
-// const options = {
+
 
 import { CarProps, FilterProps } from "@/types";
 
-// 	headers: {
-// 		'X-RapidAPI-Key': '2b916e4466msh7b0f37b4c0d5dcep1e0420jsnc94e52538c0e',
-// 		'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com'
-// 	}
-// };
-
-// try {
-// 	const response = await fetch(url, options);
-// 	const result = await response.text();
-// 	console.log(result);
-// } catch (error) {
-// 	console.error(error);
-// }
 
 export async function fetchCars(filters: FilterProps) {
   const { manufacturer, year, model, limit, fuel } = filters;
@@ -65,18 +51,18 @@ export const generateCarImageUrl = (car: CarProps, angle?: string) => {
   return `${url}`;
 };
 
-// export const updateSearchParams = (type: string, value: string) => {
-//   // Get the current URL search params
-//   const searchParams = new URLSearchParams(window.location.search);
+export const updateSearchParams = (type: string, value: string) => {
+  // Get the current URL search params
+  const searchParams = new URLSearchParams(window.location.search);
 
-//   // Set the specified search parameter to the given value
-//   searchParams.set(type, value);
+  // Set the specified search parameter to the given value
+  searchParams.set(type, value);
 
-//   // Set the specified search parameter to the given value
-//   const newPathname = `${window.location.pathname}?${searchParams.toString()}`;
+  // Set the specified search parameter to the given value
+  const newPathname = `${window.location.pathname}?${searchParams.toString()}`;
 
-//   return newPathname;
-// };
+  return newPathname;
+};
 
 // export const deleteSearchParams = (type: string) => {
 //   // Set the specified search parameter to the given value
